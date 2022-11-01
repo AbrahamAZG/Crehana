@@ -11,4 +11,5 @@ linea.addEventListener('click',function(){
 
 cerrarr.addEventListener('click',function(){
     resp.style.display = 'none'
+   
 })
