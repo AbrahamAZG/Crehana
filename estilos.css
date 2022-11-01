@@ -302,17 +302,83 @@ h1.titulo {
 .caja1tabs{
     background-color: white;
     padding: 3.5rem;
-    color: #55494f ;
+    color:#181b32 ;
+    font-weight: 700;
 }
+
 .contenedorslider{
     display: flex;
 }
+
 .track, .tracks{
     overflow: hidden;
     animation: scroll 40s linear infinite;
 }
 
+.cajasbanner3{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    gap: 5rem;
+    margin: 0 auto;
+   
+}
+.banner3{
+    background-color: #ffe4a6;
+}
+.cajabanner3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding: 0 5rem;
+    gap: 2.5rem;
+}
+h3.titulobanner3{
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #181b32;
+    font-weight: 600;
+}
+p.parrafobanner3{
+    color: var(--colorprincipal);
+    font-size: 2rem;
+    font-weight: 600;
+    align-self: flex-start;
+    max-width: 500px;
+    margin:auto;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+  
+}
+h5.presentacioncrehana{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--colorprincipal);
+}
+.iframe{
+    width: 55%;
+    min-width: 500px;
 
+}
+iframe{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+ /**RESPONSIVE**/
 @media (max-width:1075px) {
 
     section.banner1,
@@ -418,6 +484,16 @@ h1.titulo {
         display: block;
         width: 3rem;
         cursor: pointer;
+    }
+    .cajasbanner3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+    .cajabanner3{
+        text-align: center;
+        padding-top: 4rem;
     }
  
    
