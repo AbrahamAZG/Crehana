@@ -219,7 +219,7 @@ h1.titulo {
     gap: 6rem;
 }
 
-.allinone {
+.subtitulobanner2{
     text-align: center;
     font-size: 4rem;
     line-height: 64px;
@@ -379,7 +379,7 @@ h1.titulo {
         padding-bottom: 3rem;
     }
 
-    .allinone {
+    .subtitulobanner2{
         font-size: 2.5rem;
         line-height: 50px;
     }
