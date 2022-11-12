@@ -2,5 +2,5 @@
 
  https://www.youtube.com/watch?v=5L6h_MrNvsk  ------ TARGET-TABS
 
- Linea 354 empieza responsive
+ Linea 455 empieza responsive
 
