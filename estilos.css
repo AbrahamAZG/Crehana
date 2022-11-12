@@ -760,3 +760,8 @@ iframe {
         min-width: 390px;
     }
 }
+@media (max-width:408px){
+    .iframe{
+        min-width: 350px;
+    } 
+}
