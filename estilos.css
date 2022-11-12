@@ -755,8 +755,10 @@ iframe {
  
 }
 
-@media (max-width:500px){
+@media (max-width:515px){
     .iframe{
-        min-width: 400px;
+        
+        max-width: 90;
+        
     }
 }
