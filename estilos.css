@@ -765,7 +765,7 @@ iframe {
 }
 @media (max-width:408px){
     .iframe{
-        min-width: 300px;
+        min-width: 320px;
     } 
     .cajadosoverflow img{
         min-width: 280px;
