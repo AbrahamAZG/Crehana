@@ -482,6 +482,7 @@ iframe {
     gap: 1.2rem;
     background-color: white;
     border-radius: 20px;
+    text-align: center;
 }
 .nombretestimonio{
     font-size: 2rem;
@@ -795,6 +796,9 @@ iframe {
     .menuresp{
         width: 100vw;
       
+    }
+    .none{
+        display: none;
     }
     .imagenbanner1 .width{
         max-width: 100%;
