@@ -773,15 +773,22 @@ iframe {
     h1.titulo{
         font-size: 6.5rem;
     }
+    .cajacontenedor1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .parrafo1{
+        margin-bottom: 4rem;
+    }
     .botonesbanner1{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4rem;
+        margin-top: -4rem;
     }
-
-
-
     .botonesRegistro{
         display: none;
     }
