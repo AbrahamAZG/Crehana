@@ -453,7 +453,48 @@ iframe {
 .subparrafo{
     font-size: 2.5rem;
     line-height: 35px;
+ 
     
+}
+.testimonios{
+    background-color: #f7f8fa;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.titulartestimonios{
+    font-size: 4rem;
+    text-align: center;
+    color:#181b32;
+   
+}
+
+.cajastestimonio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.contenidotestimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.nombretestimonio{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.puestodetrabajo{
+    font-size: 1rem;
+    text-align: center;
+}
+.parrafotestimonio{
+    font-size: 1.4rem;
+    padding: 2.5rem;
 }
 
 
@@ -729,6 +770,18 @@ iframe {
 
 }
 @media (max-width:800px){
+    h1.titulo{
+        font-size: 6.5rem;
+    }
+    .botonesbanner1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+
+
     .botonesRegistro{
         display: none;
     }
@@ -741,7 +794,10 @@ iframe {
         min-width: 200px;
     }
     .botonbanner1, .botondosbanner1{
-        font-size: 1rem;
+        font-size: 2.5rem;
+    }
+    .parrafo1{
+        text-align: center;
     }
     .tabuno{
         display: none;
