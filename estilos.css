@@ -92,14 +92,16 @@ li {
 
 }
 
-.botonuno {
+.botonuno{
     border-color: var(--colorprincipal);
     color: var(--colorprincipal);
     background-color: white;
     font-size: 16px;
     font-weight: 700;
 }
-
+.botonuno a{
+    color:var(--colorprincipal)
+}
 .botones {
     padding: 1rem 2rem;
     border-radius: 1rem;
