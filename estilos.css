@@ -34,6 +34,7 @@ img {
 .cabecera {
     background-color: var(--colorprincipal);
     background: linear-gradient(90deg, #4b22f4 60%, #ffff 20%);
+   
 
 }
 
@@ -115,6 +116,9 @@ li {
 
 }
 
+.slider{
+    z-index: -100;
+}
 /**Banner1**/
 
 .banner1 {
@@ -289,6 +293,7 @@ h1.titulo {
     color: var(--colorprincipal);
     border-bottom: 3px solid var(--colorprincipal);
 }
+
 
 .titulotabs1 {
     color: var(--colorprincipal);
@@ -630,6 +635,7 @@ cursor: pointer;
         text-align: center;
         gap: 2rem;
     }
+  
 }
 
 @media (max-width:1075px) {
@@ -761,6 +767,22 @@ cursor: pointer;
     .wrapper_pie {
         gap: 4rem;
     }
+    .botonuno{
+        color: white;
+        background-color: var(--colorprincipal);
+        border: 2px solid white;
+        padding: 1.3rem 2rem;
+    }
+    .botones .linksesion{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+    .botondos{
+        background-color: white;
+        color: var(--colorprincipal);
+        padding: 1.3rem 2rem;
+    }
 
 
     @keyframes scroll {
@@ -848,27 +870,33 @@ cursor: pointer;
     }
 
     .botonresp1 {
-        padding: 1.5rem 2.5rem;
+        padding: 2rem 3rem;
         background-color: #4b22f4;
         color: white;
         border: none;
         border-radius: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 80%;
         margin: 0 auto;
+        font-weight: 700;
+    
     }
 
     .botonresp2 {
-        padding: 1.5rem 2.5rem;
+        padding: 2rem 3rem;
         border-color: #4b22f4;
         background-color: white;
         color: #4b22f4;
         border-radius: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 80%;
         margin: 0 auto;
+        font-weight: 700;
     }
-
+    .botonresp2 a{
+        text-decoration: none;
+        color: var(--colorprincipal);
+    }
     .menus {
         display: flex;
         align-items: center;
@@ -895,6 +923,21 @@ cursor: pointer;
 
     .overflows {
         overflow: visible;
+    }
+    .respb{
+        font-size: 2rem;
+        width: 70%;
+       
+    }
+    .aprende{
+        text-align: center;
+        color: #878fb8;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    .abcd{
+        margin-bottom: 1.5rem;
     }
 
 }

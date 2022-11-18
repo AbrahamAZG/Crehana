@@ -8,7 +8,6 @@ lineas.addEventListener('click',function(){
   
  
 })
-
 cerrarr.addEventListener('click',function(){
     resp.classList.toggle('menurespoToggle')
 })
