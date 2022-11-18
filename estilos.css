@@ -91,7 +91,6 @@ li {
     padding: 1rem;
 
 }
-
 .botonuno{
     border-color: var(--colorprincipal);
     color: var(--colorprincipal);
@@ -808,6 +807,7 @@ cursor: pointer;
         gap: 2.5;
         border-right: 1px solid black;
         height: 100vh;
+        overflow: scroll;
         z-index: 100;
         display: none;
         position: absolute;
