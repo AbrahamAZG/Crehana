@@ -609,7 +609,15 @@ iframe {
 .botonpie2 {
     margin-top: 1rem;
 }
-
+.cajaiconos{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.cajaiconos img{
+cursor: pointer;
+}
 
 
 /**RESPONSIVE**/
