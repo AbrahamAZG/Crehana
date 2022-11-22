@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Crehana</title>
+</head>
+<style>
+    .licursos {
+        color: black;
+    }
+
+    .licursos a {
+        color: black;
+    }
+
+    .logomorado {
+        color: #4b22f4;
+    }
+
+    .listacursos {
+        color: black;
+        padding: 1.3rem 0;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+
+    .cursosbanner {
+        width: 90%;
+        margin-top: 8rem;
+    }
+
+    .flexcursos {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .wrappercursos li {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        font-weight: 500;
+    }
+
+    .imagencursos img {
+        width: 100%;
+        margin-left: 10rem;
+        position: relative;
+    }
+
+    .cursoscursos {
+        color: black;
+        text-align: start;
+        margin-left: 10rem;
+        padding-top: 3rem;
+        font-size: 3rem;
+    }
+
+    .tituloslider {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+        color: white;
+    }
+
+    .parrafoslider {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    .botonslider {
+        padding: 1.5rem 2.5rem;
+        background-color: #4b22f4;
+        font-weight: 500;
+        border: none;
+        color: white;
+    }
+
+    .cajaunoslider {
+        position: absolute;
+        top: 20rem;
+        left: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+
+    .cajaunoslider button {
+        font-weight: 700;
+    }
+
+    .carritoicono {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .carritoicono img {
+        width: 25px;
+        margin-left: 0px;
+    }
+
+    .listadecursos {
+        margin-left: 10rem;
+        margin-top: 5rem;
+    }
+
+    .imagencursouno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        background-image: url(./img/cursouno.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 270px;
+        cursor: pointer;
+    }
+
+
+    .cajalistacursos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+    .parrafocursouno{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        
+    }
+    .autoracursouno{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color:#374c5f;
+    }
+    .autoracursodos{
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        color:#374c5f;
+    }
+    .autoracursotres{
+        margin-top: 1.1rem;
+        font-size: 1.4rem;
+        color:#374c5f;
+    }
+    .comprarahora{
+        width: 90%;
+        padding:1.6rem 0.5rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #4b22f4;
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .preciosantes{
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .preciocursouno{
+        color: #e6215d;
+        margin-top: 0.5rem;
+    }
+    .precioantes{
+        color: grey;
+        text-decoration:line-through;
+        margin-top: 0.5rem;
+    }
+    .carritoicono img{
+        margin-top: 1rem;
+       
+    }
+ 
+    .listacursos .dropdown{
+        margin-left: 1rem;
+    }
+    .marketingg{
+        color:#4b22f4;
+        font-size: 4rem;
+
+    }
+</style>
+
+<body>
+
+    <main class="wrappinchi">
+        <header style="background: white;" class="cabecera sticky">
+            <div style="background: white" class="contenedor blanco">
+                <div class="cajalogonav">
+                    <img class="menuresponsive" src="./img/menu.png">
+                    <!--Menu responsive-->
+                    <div class="menuresp">
+                        <div class="cajatituloresp">
+                            <p class="menus">
+                                <img class="iconoresp" src="./img/iconoresponsive.png"> Menu
+                            </p>
+                            <span class="cerrar">
+                                X
+                            </span>
+                        </div>
+                        <div class="listaresp">
+                            <li class="listasres ">Cursos</li>
+                            <li class="listasres ">Para empresas</li>
+                            <li class="listasres "><a href="./parapersonas.html">Para personas</a></li>
+                            <li class="listasres ">Higher Education</li>
+                            <li class="listasres ">Centro de ayuda</li>
+                        </div>
+                        <div class="cajabotonesresp">
+                            <button class="botonresp1">
+                                Prueba gratis
+                            </button>
+                            <button class="botonresp2">
+                                <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
+                            </button>
+                            <p class="aprende">Aprende desde tu celular</p>
+                            <button class="botonpie1 respb">Descarga el app en<br> Apple store</button>
+                            <button class="botonpie2 respb">Descarga el app en<br> Google playstore</button>
+                            <button class="botonpie2 respb abcd">Descarga el app en<br> Huawei gallery</button>
+                        </div>
+                    </div>
+                    <!--Termina menu responsive-->
+                    <div class="logo logomorado">CREHANA</div>
+                    <nav class="navegacion">
+                        <ul class="listanavegacion">
+
+                            <li class="licursos">Para empresas</li>
+                            <li class="listasres personasuno licursos"><a href="./parapersonas.html">Para personas</a>
+                            </li>
+                            <li class="licursos">Higher Education</li>
+                            <li class="licursos">Cursos</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="botonesRegistro">
+                    <button class="botonuno botones">
+                        <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
+                    </button>
+                    <button class="botondos botones">
+                        Prueba gratis
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="cursosbanner">
+            <div class="flexcursos">
+                <div class="bannerwrapper">
+                    <div class="wrappercursos">
+                        <li class="listacursos">Categorias<span class="dropdown"><img src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
+                        <li class="listacursos">Niveles<span class="dropdown"><img src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
+                        <li class="listacursos">Software<span class="dropdown"><img src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
+                        <li class="listacursos">Duracion<span class="dropdown"><img src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
+                        <li class="listacursos">Idioma<span class="dropdown"><img src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
+                    </div>
+                </div>
+                <div class="imagencursos">
+                    <img src="./img/cursosbanner.avif">
+                    <h3 class="cursoscursos">
+                        Cursos de <span class="marketingg"> Marketing</span>
+                    </h3>
+
+                    <div class="cajaunoslider">
+                        <h2 class="tituloslider"> El Arte de preparar pizzas</h2>
+                        <p class="parrafoslider">Aprende como conseguir la masa perfecta para cada tipo de pizza</p>
+                        <button class="botonslider">Ver Detalles</button>
+                    </div>
+                    <div class="listadecursos">
+                        <div class="cajalistacursos">
+                            <div class="cursonumerouno">
+                                <div class="imagencursouno">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Redes sociales desde cero: Logra el<br> exito digital
+                                </p>
+                                <p class="autoracursouno">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                    <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span>
+                                </div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px; padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerouno">
+                                <div class="imagencursouno">
+                                    <h6 class="vertrailer"><span class="visiblity">Ver Trailer</span></h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    SEM: Búsqueda en Google Ads
+                                <p class="autoracursodos">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                    <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="cursonumerodos">
+                                <div class="imagencursouno doss">
+                                    <h6 class="vertrailer">Ver Trailer</h6>
+                                </div>
+                                <p class="parrafocursouno">
+                                    Community Management para<br> principiantes
+                                </p>
+                                <p class="autoracursotres">
+                                    Por Eva Klobuznik
+                                </p>
+                                <div class="preciosantes">
+                                <span class="preciocursouno">S/54</span><span class="precioantes">S/108</span></div>
+                                <div class="carritoicono">
+                                    <img  style="border:3px solid #4b22f4 ; border-radius: 5px;padding: 1rem;"  src="./img/shopping-cart.png" width="25px">
+                                    <button class="comprarahora">Comprar ahora</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="responsive.js"></script>
+</body>

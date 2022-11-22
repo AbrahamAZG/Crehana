@@ -23,7 +23,9 @@ html {
 img {
     max-width: 100%;
 }
-
+button{
+    cursor: pointer;
+}
 .wrappinchi {
 
     max-inline-size: 160rem;
@@ -273,7 +275,14 @@ h1.titulo {
     background-color: #f6f7f9;
 
 }
-
+.listasres a{
+    color:#181b32;
+    text-decoration:none
+}
+.personasuno a{
+    color: white;
+    text-decoration: none;
+}
 .tab-content {
     margin-top: 3rem;
     width: 90%;
@@ -351,10 +360,8 @@ h1.titulo {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 5rem;
     margin: 0 auto;
-
 }
 
 .banner3 {

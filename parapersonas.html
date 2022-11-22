@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilospersonas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="wraper">
+        <div class="header1">
+            <div>
+                <img class="header1-img" src="./src/logoCrehana.png" alt="">
+            </div>
+            <div>
+                <!--
+                    <input placeholder="Número de celular" type="tel" data-testid="phone-number-field" value="+51">
+                -->
+                <div class="container">
+                    <form id="login" onsubmit="process(event)">
+                
+                      <input id="phone" type="tel" name="phone" class="telefono" placeholder="Ingresar número" />
+                      <input type="submit" class="btnTelefono" value="Asesórate" />
+                    </form>
+                    <div class="alert alert-info" style="display: none;"></div>
+                   </div>
+                <!--<button>Asesórate</button>-->
+            </div>
+        </div>
+        <div class="header2">
+            <div class="header2-tit">
+                <span>
+                   <b>Accede a + de 1000 cursos con la Membresía Dúo con 40% dscto.</b> 
+                </span>
+            </div>
+            <div>
+                <img class="header2-img" src="./src/img1.avif" alt="">
+            </div>
+
+        </div>
+        <div class="cards">
+            <div class="card-lite">
+                <div class="card-tit"></div>
+                <div class="card1">
+                    <div class="card-head1">
+                        <p class="card-head1-tit1"><b>Lite</b></p>
+                        <p class="card-head1-tit2">Pago por 6 meses</p>
+                    </div>
+                    <div class="card-head2">
+                        <p class="card-head2-tit1"><b>S/174,00</b></p>
+                        <p class="card-head2-tit2">Precio final</p>
+                        <p class="card-head2-tit3">1 Estudiante</p>
+                    </div>
+                    <div class="card-head3">
+                        <button>Vuélvete Premium</button>
+                    </div>
+                    <div class="card-head4">
+                        <a href="">REGALAR ESTE PLAN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-individual">
+                <div class="card-tit"></div>
+                <div class="card2">
+                    <div class="card-head1">
+                        <p class="card-head1-tit1"><b>Individual</b></p>
+                        <p class="card-head1-tit2">Pago anual</p>
+                    </div>
+                    <div class="card-head2">
+                        <p class="card-head2-tit1"><b>S/279,00</b></p>
+                        <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 408,00</p></div>
+                        <p class="card-head2-tit3">1 Estudiante</p>
+                    </div>
+                    <div class="card-head3">
+                        <button>Vuélvete Premium</button>
+                    </div>
+                    <div class="card-head4">
+                        <a href="">REGALAR ESTE PLAN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-duo">
+                <div class="card-tit card-tit-duo">Más popular</div>
+                <div class="card3">
+                    <div class="card-head1">
+                        <p class="card-head1-tit1"><b>Dúo</b></p>
+                        <p class="card-head1-tit2">Pago anual</p>
+                    </div>
+                    <div class="card-head2">
+                        <p class="card-head2-tit1"><b>S/319,00</b></p>
+                        <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 490,00</p></div>
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">2 Estudiantes</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">2 Estudiantes</li>
+                                <li>4  Estudiantes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-head3">
+                        <button class="btn-popular">Vuélvete Premium</button>
+                    </div>
+                    <div class="card-head4">
+                        <a href="">REGALAR ESTE PLAN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="details">
+            <div class="details-tittle">
+                <div class="detaila-row1">Acceso a todos los usuarios</div>
+                <div class="detaila-row2">Acceso a múltiples usuarios</div>
+                <div class="detaila-row1">Academias</div>
+                <div class="detaila-row2">Lives exclusivos</div>
+                <div class="detaila-row1">Constancia de participación</div>
+            </div>
+            <div class="details-Lite">
+                <div class="detaila-row1">&#10004</div>
+                <div class="detaila-row2">1 usuario</div>
+                <div class="detaila-row1">Máximo3</div>
+                <div class="detaila-row2">--</div>
+                <div class="detaila-row1">&#10004</div>
+            </div>
+            <div class="details-individual">
+                <div class="detaila-row1">&#10004</div>
+                <div class="detaila-row2">1 usuario</div>
+                <div class="detaila-row1">Ilimitados</div>
+                <div class="detaila-row2">&#10004</div>
+                <div class="detaila-row1">&#10004</div>
+            </div>
+            <div class="details-duo">
+                <div class="detaila-row1">&#10004</div>
+                <div class="detaila-row2">2 usuarios</div>
+                <div class="detaila-row1">Ilimitados</div>
+                <div class="detaila-row2">&#10004</div>
+                <div class="detaila-row1">&#10004</div>
+            </div>
+        </div>-->
+    </main>
+
+
+    <script src="./funciones.js" ></script>
+</body>
+</html>
