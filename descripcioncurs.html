@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        html {
+            font-family: 'Roboto', 'sans-serif';
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        .wrapperbannercursos {
+            display: flex;
+            align-items: center;
+            width: 85%;
+            margin: 3rem auto;
+        }
+
+        .titulocrehana {
+            font-size: 1.8rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .flexboxcurso {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            gap: 3rem;
+        }
+
+        .titulocrehana {
+            color: #4b22f4;
+            font-weight: 600;
+        }
+
+        .listanav {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .listanav {
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        .flexy {
+            display: flex;
+            gap: 2rem;
+            margin-right: 2rem;
+            align-items: center;
+        }
+
+        .inicisesioncurso {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .flexlupacarro {
+            display: flex;
+            align-items: center;
+        }
+
+        .lupasearch {
+            background-color: #9c86f9;
+            padding: 0.39rem;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        input {
+            padding: 0.7rem 1rem;
+            margin-right: -0.3rem;
+        }
+
+        .botonescurso.botonuno {
+            border-radius: 0.3rem;
+            padding: 0.5rem 2rem;
+            background-color: white;
+            color: #4b22f4;
+            font-size: 16px;
+            font-weight: 700;
+            border: #4b22f4 solid 2px;
+        }
+
+        .botonescurso.botondos {
+            border-radius: 0.3rem;
+            padding: 0.5rem 2rem;
+            background-color: #4b22f4;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            border: #4b22f4 solid 2px;
+        }
+
+        .linea {
+            height: 27px;
+            width: 1px;
+            background-color: black
+        }
+
+        h1.titulobannercursos {
+            font-size: 4rem;
+
+        }
+
+        .parrafobannercursos {
+            font-size: 1.8rem;
+
+        }
+
+        .autocursouno {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 1.7rem;
+        }
+
+        .autocursouno img {
+            width: 7rem;
+            border-radius: 50px;
+        }
+
+        .estrellas {
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        .masvendidos {
+            background-color: yellow;
+            padding: 0.5rem;
+            font-size: 1.4rem;
+            border-radius: 5px;
+        }
+
+        .estudiantes {
+            font-size: 1.5rem;
+            margin-left: 2rem;
+        }
+
+        .marketingadistancia {
+            margin-top: 4rem;
+        }
+
+        .wrappermarketingdistanciaflex {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .checkyparrafo {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+
+        }
+
+        .titulomarketing {
+            font-size: 2.5rem;
+        }
+
+        .parrafomarketingdistancia {
+            font-size: 1.5rem;
+        }
+
+        .checkyparrafo img {
+            width: 27px;
+            height: 18px;
+        }
+
+        .imagentrailer {
+            background-image: url(./img/cursocinco.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 5px;
+
+        }
+
+        .vertrailer {
+            padding: 8rem 14rem;
+        }
+
+        .preciosofertas {
+            display: flex;
+            gap: 1.3rem;
+        }
+
+        .premium {
+            border-radius: 0.3rem;
+            padding: 0.5rem 2rem;
+            background-color: #4b22f4;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            border: #4b22f4 solid 2px;
+        }
+
+        .regalo {
+            border-radius: 0.3rem;
+            padding: 0.5rem 2rem;
+            background-color: white;
+            color: #4b22f4;
+            font-size: 16px;
+            font-weight: 700;
+            border: #4b22f4 solid 2px;
+        }
+
+        .botonescajaflex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .capacitacion {
+            background-color: #101328;
+            padding: 0.3rem;
+            border-radius: 10px;
+        }
+
+        .capacitarequipo {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .pruenacrehana {
+            color: #9c86f9;
+            font-size: 1.5rem;
+        }
+
+        .premium,
+        .regalo {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .capacitacion {
+            text-align: center;
+
+            width: 90%;
+            margin: 2rem auto;
+        }
+
+        .capacitarequipo {
+            margin-top: 1rem;
+        }
+        .venticuatro{
+                        font-size: 2.5rem;
+                     
+                    }
+                    .accesos{
+                        font-size: 1.5rem;
+                    }
+                    .cuatro{
+                       color: #e6215d;
+                       font-size:2.5rem;
+                   
+                    }
+    </style>
+    <header class="cabeceracursos">
+        <div class="flexboxcurso">
+            <div class="flexy">
+                <h3 class="titulocrehana">
+                    CREHANA
+                </h3>
+                <nav class="navegacion">
+                    <ul class="listanav">
+                        <li>Soluciones</li>
+                        <li>Cursos</li>
+                        <li>Recursos</li>
+                        <li>Para personas</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flexlupacarro">
+                <input type="search" placeholder=" Que quieres aprender?">
+                <span class="lupasearch"><img src="./img/lupa.png" width="25px"></span>
+            </div>
+            <div class="linea"></div>
+            <div class="inicisesioncurso">
+                <img src="./img/shopping-cart.png" width="25px">
+                <button class="botonescurso botonuno">Iniciar sesion</button>
+                <button class="botonescurso botondos">Registrarse</button>
+            </div>
+
+        </div>
+    </header>
+    <section class="bannercursos">
+        <div class="wrapperbannercursos">
+            <div class="cajaflexprincipal">
+                <div class="cajaunobannercursos">
+                    <h1 class="titulobannercursos">
+                        Curso online de Marketing digital desde cero
+                    </h1>
+                    <p class="parrafobannercursos">
+                        !Aprende las bases del marketing online! Descubre nuevas plataformas de Social Media,
+                        estrategias de
+                        growth hacking, publicidad digital y mas.
+                    </p>
+                    <div class="autocursouno">
+                        <img src="./img/noelnuez.avif">
+                        <div class="cajatutor">
+                            <p class="nombretutor">Noel Nunez</p>
+                            <p class="puestotutor">Lidero el lanzamiento de TikTok Latam</p>
+                        </div>
+                    </div>
+                    <div class="estrellas">
+                        <span class="masvendidos">Mas vendidos</span>
+                        <span class="estudiantes">22.231 Estudiantes</span>
+                    </div>
+                </div>
+                <div class="marketingadistancia">
+                    <h2 class="titulomarketing">
+                        Que aprenderas en este curso de marketing digital a distancia ?
+                    </h2>
+                    <div class="wrappermarketingdistanciaflex">
+                        <div class="cajaunomarketingdistancia">
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cajaunomarketingdistancia">
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                            <div class="checkyparrafo">
+                                <img src="./img/cheque.png" width="20px">
+                                <p class="parrafomarketingdistancia">
+                                    Aprenderas que es el marketing digital y cuales son las herramientas del marketing
+                                    digital en un mundo 2.0
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="cajaflexsegunda">
+                <div class="imagentrailer">
+                    <p class="vertrailer">Mira el Trailer</p>
+                </div>
+              
+                <div class="preciosofertas">
+                    <input type="checkbox">
+                    <p class="accesos">Acceso solo a este curso<br><span class="venticuatro">S/24</span></p>
+                </div>
+                <div class="preciosofertas">
+                    <input type="checkbox">
+                    <p class="accesos">Acceso solo a todos los cursos<br><span class="venticuatro cuatro">S/245</span><br>
+                        Con tu membresia, obten acceso a todo <br>nuestro catalogo y beneficios exclusivos</p>
+                </div>
+                <div class="botonescajaflex">
+                    <button class="premium">Vuelvete Premium</button>
+                    <button class="regalo">Regalar este curso</button>
+                </div>
+
+                <div class="capacitacion">
+                    <p class="capacitarequipo">Quieres capacitar a tu equipo?</p>
+                    <p class="pruenacrehana">Prueba Crehana for business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
