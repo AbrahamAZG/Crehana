@@ -12,16 +12,7 @@
 </head>
 
 <body>
-    <style>
-        /**.sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-        .slider{
-            z-index: -100;
-        }**/
-    </style>
+ 
     <main class="wrappinchi">
         <header class="cabecera sticky">
             <div class="contenedor">
@@ -38,7 +29,7 @@
                                 </span>
                             </div>
                             <div class="listaresp">
-                                <li class="listasres">Cursos</li>
+                                <li class="listasres dropdowncursos">Cursos</li>
                                 <li class="listasres">Para empresas</li>
                                 <li class="listasres"><a href ="./parapersonas.html">Para personas</a></li>
                                 <li class="listasres">Higher Education</li>
@@ -58,6 +49,80 @@
                             </div>
                         </div>
                       <!--Termina menu responsive-->
+                      <style>
+                       main{
+                            position: relative;
+                        }
+                        .dropdownmenu{
+                           
+                            background-color: white;
+                            position: absolute;
+                            left: 0px;
+                            width: 60%;
+                            left: 13%;
+                            height: 40vh;
+                            display: none;
+                            
+
+                        }
+                        .dropdownwrapper{
+                            display: flex;
+                            justify-content: space-around;
+                            
+                            
+                            padding: 2rem;
+                        }
+                        .titulodropdown{
+                            font-size: 2.2rem;
+                            font-weight: 600;
+                            
+                            
+                        }
+                        .dropdownmenu li{
+                            list-style: none;
+                            text-decoration: none;
+                            color: black;
+                            font-weight: 400;
+                          font-size:2rem;
+                        
+                        }
+                        .dropdownmenu li:hover{
+                            color:  #4b22f4;
+                        }
+                        .listascaja1dropdown{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                            margin-top: 1.5rem;
+                            margin-left: 0px;
+                        }
+                        .titulocajatresdropdown{
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            
+                        }
+                        .lineaizquierda{
+                            border-right: 1px solid grey;
+                            height: 38vh;
+                            padding:3rem;
+                           
+                        }
+                        .paddingmarketing{
+                            margin-top: 2rem;
+                        }
+                        .paddingmarketing a{
+                            text-decoration: none;
+                            list-style: none;
+                            color: #4b22f4;
+                        }
+                        .paddingcategorias{
+                            margin-top:2rem;
+                            font-size: 2rem;
+                        }
+                        .activatedrop{
+                            display: block;
+                        }
+                      </style>
                         <div class="logo">CREHANA</div>
                         <nav class="navegacion">
                             <ul class="listanavegacion">
@@ -65,8 +130,38 @@
                                 <li>Para empresas</li>
                                 <li class="listasres personasuno"><a href ="./parapersonas.html">Para personas</a></li>
                                 <li>Higher Education</li>
-                                <li>Cursos</li>
+                                <li class="dropdownmenucursosh">Cursos</li>
                             </ul>
+                            <div class="dropdownmenu">
+                                <div class="dropdownwrapper">
+                                    <div class="caja1dropdown lineaizquierda">
+                                        <p class="titulodropdown">
+                                            Explora Crehana
+                                        </p>
+                                        <ul class="listascaja1dropdown">
+                                            <li>Categorias</li>
+                                            <li>Nuevos lanzamientos</li>
+                                        </ul>
+                                    </div>
+                                    <div class="caja2dropdown">
+                                        <ul class="listascaja1dropdown paddingmarketing">
+                                            <li><a href="cursos.html">Marketing</a></li>
+                                            <li>Liderazgo</li>
+                                            <li>lustracion digital</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cajatresdropdown">
+                                        <p class="titulocajatresdropdown paddingcategorias">
+                                            Subcategorias
+                                        </p>
+                                        <ul class="listascaja1dropdown">
+                                            <li>Gestion y estrategia de marketing</li>
+                                            <li>Analitica y Performance</li>
+                                            <li>Redes sociales</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </nav>
                 </div>
                 <div class="botonesRegistro">
