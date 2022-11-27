@@ -2,6 +2,8 @@
         const cajaemergente = document.querySelector('.cajaemergente')
         const cerrito = document.querySelector('.cerrito')
         const todo = document.querySelector('body')
+       
+
         emergente.addEventListener('click', function () {
                 cajaemergente.classList.toggle('active')
                 todo.classList.add('color')
@@ -16,3 +18,6 @@
                 emergente.classList.remove('colores')
 
         })
+
+
+    

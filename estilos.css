@@ -27,7 +27,7 @@ button{
     cursor: pointer;
 }
 .wrappinchi {
-
+    
     max-inline-size: 160rem;
     margin: 0 auto;
 
@@ -631,7 +631,9 @@ iframe {
 .cajaiconos img{
 cursor: pointer;
 }
-
+.blurr{
+    filter: blur(3px);
+}
 
 /**RESPONSIVE**/
 

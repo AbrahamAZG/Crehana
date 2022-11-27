@@ -11,10 +11,11 @@
     <title>Crehana</title>
 </head>
 <style>
-    main.wrappinchi{
+    main.wrappinchi {
         position: relative;
-    
+
     }
+
     .licursos {
         color: black;
     }
@@ -27,12 +28,7 @@
         color: #4b22f4;
     }
 
-    .listacursos {
-        color: black;
-        padding: 1.3rem 0;
-        border-bottom: 1px solid grey;
-        width: 100%;
-    }
+
 
     .cursosbanner {
         width: 90%;
@@ -91,13 +87,14 @@
     .cajaunoslider {
         position: absolute;
         top: 20rem;
-        left: 40rem;
+        left: 20rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         font-size: 1.5rem;
         gap: 1rem;
     }
+
 
     .cajaunoslider button {
         font-weight: 700;
@@ -212,6 +209,32 @@
         font-size: 4rem;
 
     }
+
+    @media (max-width:1200px) {
+        
+        .cajaunoslider{
+           position: absolute;
+           
+           display: none;
+        }
+        .navegacion{
+            display: none;
+        }
+        .cajalistacursos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .cursoscursos{
+            text-align: center;
+        }
+        .cajabotonesresp{
+            display: none;
+        }
+    }
 </style>
 
 <body>
@@ -276,20 +299,7 @@
         </header>
         <section class="cursosbanner">
             <div class="flexcursos">
-                <div class="bannerwrapper">
-                    <div class="wrappercursos">
-                        <li class="listacursos">Categorias<span class="dropdown"><img
-                                    src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
-                        <li class="listacursos">Niveles<span class="dropdown"><img
-                                    src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
-                        <li class="listacursos">Software<span class="dropdown"><img
-                                    src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
-                        <li class="listacursos">Duracion<span class="dropdown"><img
-                                    src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
-                        <li class="listacursos">Idioma<span class="dropdown"><img
-                                    src="./img/arrow-down-sign-to-navigate.png" width="8px"></span></li>
-                    </div>
-                </div>
+
                 <div class="imagencursos">
                     <img src="./img/cursosbanner.avif">
                     <h3 class="cursoscursos">
@@ -315,7 +325,8 @@
                                     }
                                 </style>
                                 <p class="parrafocursouno">
-                                   <a href="./descripcioncurs.html">Redes sociales desde cero: Logra el<br> exito digital</a> 
+                                    <a href="./descripcioncurs.html">Redes sociales desde cero: Logra el<br> exito
+                                        digital</a>
                                 </p>
                                 <p class="autoracursouno">
                                     Por Eva Klobuznik
@@ -539,13 +550,13 @@
                 width: 40vw;
                 z-index: 1000;
                 position: absolute;
-                top:3%;
-               left: 30%;
+                top: 3%;
+                left: 30%;
                 display: none;
                 background: white;
                 border-radius: 30px;
             }
-        
+
             .active {
                 display: block;
             }
@@ -589,15 +600,18 @@
                 gap: 1.5rem;
                 padding-right: 1rem;
             }
-            .preciooferta{
+
+            .preciooferta {
                 color: #e6215d;
                 font-size: 2.6rem;
                 font-weight: 600;
             }
-            .precioantes{
+
+            .precioantes {
                 text-decoration: line-through;
                 font-size: 1.8rem;
             }
+
             .botonemergente {
                 padding: 1.5rem 3rem;
                 background-color: #4b22f4;
@@ -607,23 +621,25 @@
                 font-size: 1.6rem;
                 font-weight: 600;
                 border-radius: 10px;
-                
+
             }
-            .color{
-                background-color: hsl(231,13%,32%);
+
+            .color {
+                background-color: hsl(231, 13%, 32%);
             }
-            .colores{
+
+            .colores {
                 opacity: 0.2;
             }
-         .cerrito{
-            text-align: center;
-            padding: 2rem;
-            color: #4b22f4;
-            font-size: 2.3rem;
-            cursor: pointer;
-            font-weight: 600;
-         }
-          
+
+            .cerrito {
+                text-align: center;
+                padding: 2rem;
+                color: #4b22f4;
+                font-size: 2.3rem;
+                cursor: pointer;
+                font-weight: 600;
+            }
         </style>
         <div class="cajaemergente">
             <source>
