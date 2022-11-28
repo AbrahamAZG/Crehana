@@ -10,7 +10,76 @@
 
     <title>Crehana</title>
 </head>
-<style>
+
+
+<body>
+
+    <main class="wrappinchi">
+        <header style="background: white;" class="cabecera sticky">
+            <div style="background: white" class="contenedor blanco">
+                <div class="cajalogonav">
+                    <img class="menuresponsive" src="./img/menu.png">
+                    <!--Menu responsive-->
+                    <div class="menuresp">
+                        <div class="cajatituloresp">
+                            <p class="menus">
+                                <img class="iconoresp" src="./img/iconoresponsive.png"> Menu
+                            </p>
+                            <span class="cerrar">
+                                X
+                            </span>
+                        </div>
+                        <div class="listaresp">
+                            <li class="listasres ">Cursos</li>
+                            <li class="listasres ">Para empresas</li>
+                            <li class="listasres "><a href="./parapersonas.html">Para personas</a></li>
+                            <li class="listasres ">Higher Education</li>
+                            <li class="listasres ">Centro de ayuda</li>
+                        </div>
+                        <div class="cajabotonesresp">
+                            <button class="botonresp1">
+                                Prueba gratis
+                            </button>
+                            <button class="botonresp2">
+                                <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
+                            </button>
+                            <p class="aprende">Aprende desde tu celular</p>
+                            <button class="botonpie1 respb">Descarga el app en<br> Apple store</button>
+                            <button class="botonpie2 respb">Descarga el app en<br> Google playstore</button>
+                            <button class="botonpie2 respb abcd">Descarga el app en<br> Huawei gallery</button>
+                        </div>
+                    </div>
+                    <style>
+                        .logo a{
+                            color: #4b22f4;
+                            text-decoration: none;
+                            list-style: none;
+                        }
+                    </style>
+                    <!--Termina menu responsive-->
+                    <div class="logo logomorado"> <a href="./index.html">CREHANA</a></div>
+                    <nav class="navegacion">
+                        <ul class="listanavegacion">
+
+                            <li class="licursos">Para empresas</li>
+                            <li class="listasres personasuno licursos"><a href="./parapersonas.html">Para personas</a>
+                            </li>
+                            <li class="licursos">Higher Education</li>
+                            <li class="licursos">Cursos</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="botonesRegistro">
+                    <button class="botonuno botones">
+                        <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
+                    </button>
+                    <button class="botondos botones">
+                        Prueba gratis
+                    </button>
+                </div>
+            </div>
+        </header>
+        <style>
     main.wrappinchi {
         position: relative;
 
@@ -236,67 +305,6 @@
         }
     }
 </style>
-
-<body>
-
-    <main class="wrappinchi">
-        <header style="background: white;" class="cabecera sticky">
-            <div style="background: white" class="contenedor blanco">
-                <div class="cajalogonav">
-                    <img class="menuresponsive" src="./img/menu.png">
-                    <!--Menu responsive-->
-                    <div class="menuresp">
-                        <div class="cajatituloresp">
-                            <p class="menus">
-                                <img class="iconoresp" src="./img/iconoresponsive.png"> Menu
-                            </p>
-                            <span class="cerrar">
-                                X
-                            </span>
-                        </div>
-                        <div class="listaresp">
-                            <li class="listasres ">Cursos</li>
-                            <li class="listasres ">Para empresas</li>
-                            <li class="listasres "><a href="./parapersonas.html">Para personas</a></li>
-                            <li class="listasres ">Higher Education</li>
-                            <li class="listasres ">Centro de ayuda</li>
-                        </div>
-                        <div class="cajabotonesresp">
-                            <button class="botonresp1">
-                                Prueba gratis
-                            </button>
-                            <button class="botonresp2">
-                                <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
-                            </button>
-                            <p class="aprende">Aprende desde tu celular</p>
-                            <button class="botonpie1 respb">Descarga el app en<br> Apple store</button>
-                            <button class="botonpie2 respb">Descarga el app en<br> Google playstore</button>
-                            <button class="botonpie2 respb abcd">Descarga el app en<br> Huawei gallery</button>
-                        </div>
-                    </div>
-                    <!--Termina menu responsive-->
-                    <div class="logo logomorado">CREHANA</div>
-                    <nav class="navegacion">
-                        <ul class="listanavegacion">
-
-                            <li class="licursos">Para empresas</li>
-                            <li class="listasres personasuno licursos"><a href="./parapersonas.html">Para personas</a>
-                            </li>
-                            <li class="licursos">Higher Education</li>
-                            <li class="licursos">Cursos</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="botonesRegistro">
-                    <button class="botonuno botones">
-                        <a href="./iniciosesion.html" class="linksesion"> Iniciar sesion</a>
-                    </button>
-                    <button class="botondos botones">
-                        Prueba gratis
-                    </button>
-                </div>
-            </div>
-        </header>
         <section class="cursosbanner">
             <div class="flexcursos">
 
@@ -546,15 +554,20 @@
 
         </section>
         <style>
-            .cajaemergente {
+            main{
+                position: relative;
+            }
+            .cajaemergente{
                 width: 40vw;
                 z-index: 1000;
                 position: absolute;
                 top: 3%;
                 left: 30%;
-                display: none;
+                display:none;
                 background: white;
                 border-radius: 30px;
+                height: 84vh;
+              
             }
 
             .active {
@@ -639,6 +652,7 @@
                 font-size: 2.3rem;
                 cursor: pointer;
                 font-weight: 600;
+                
             }
         </style>
         <div class="cajaemergente">

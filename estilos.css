@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar {
-    background-color: white;
+    background-color: hsl(220, 20%, 97%);
 }
 
 html {
@@ -13,7 +13,10 @@ html {
     box-sizing: border-box;
 
 }
-
+.arribamenu{
+    position: relative;
+    top: -28px;
+}
 * {
     padding: 0px;
     margin: 0px;

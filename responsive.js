@@ -24,9 +24,9 @@ cerrarr.addEventListener('click',function(){
 
 dropdowncursoss.addEventListener('click',function(){
     dropdownmenus.classList.toggle('activatedrop')
-    dropdownmenus.style.marginTop = '10px'
-    cuerpo.style.overflow = 'hidden'
-    cuerpo.style.backgroundColor = 'hsla(282, 37%, 13%, 0.63)'
+   
+    
+   
 })
 
 

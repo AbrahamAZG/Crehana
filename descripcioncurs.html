@@ -277,12 +277,17 @@
             font-size: 2.5rem;
 
         }
+        .flexy .titulocrehana a{
+            text-decoration: none;
+            list-style: none;
+            color: #4b22f4;
+        }
     </style>
     <header class="cabeceracursos">
         <div class="flexboxcurso">
             <div class="flexy">
                 <h3 class="titulocrehana">
-                    CREHANA
+                    <a href="./index.html">CREHANA</a>
                 </h3>
                 <nav class="navegacion">
                     <ul class="listanav">
@@ -694,12 +699,10 @@
 
     <script>
         const accordion = document.querySelectorAll('.panel');
-        //console.log(accordion);
+      
         accordion.forEach(function (ele) {
-            //console.log(ele);
             ele.addEventListener('click', toggleEle);
         })
-
         function toggleEle(e) {
             console.log(e.target.parentElement);
             accordion.forEach(function (ele) {
